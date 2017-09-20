@@ -1,0 +1,12 @@
+.home {
+    img.profile {
+        @media (max-width: 576px) { 
+            max-height: 200px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .row {
+        margin: 12px;
+    }
+}
