@@ -5,7 +5,7 @@
 layout: home
 ---
 
-I'm a Software Engineer based out of Seattle working on [Google Domains](https://domains.google.com/registrar).
+I'm a software engineer based out of Seattle working on [Google Domains](https://domains.google.com/registrar).
 
 I graduated in 2015 with a Bachelor's Degree in Computer Science from [Carnegie Mellon University](http://www.cmu.edu) in Pittsburgh. 
 
