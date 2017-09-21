@@ -1,0 +1,20 @@
+<footer class="site-footer container">
+    <div class="social row">
+        {% if site.email %}
+            {% capture social-link %}mailto:{{ site.email }}{% endcapture %}
+            {% include social-icon.html href=social-link icon='fa-envelope-o' aria='Email' %}
+        {% endif %} 
+        {% if site.github_username %}
+            {% capture social-link %}https://github.com/{{ site.github_username }}{% endcapture %}
+            {% include social-icon.html href=social-link icon='fa-github' aria='Github' %}
+        {% endif %} 
+        {% if site.facebook_username %}
+            {% capture social-link %}https://facebook.com/{{ site.facebook_username }}{% endcapture %}
+            {% include social-icon.html href=social-link icon='fa-facebook' aria='Facebook' %}
+        {% endif %}
+        {% if site.twitter_username %}
+            {% capture social-link %}https://twitter.com/{{ site.twitter_username }}{% endcapture %}
+            {% include social-icon.html href=social-link icon='fa-twitter' aria='Twitter' %}
+        {% endif %}
+    </div>
+</footer>
