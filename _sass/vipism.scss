@@ -1,3 +1,4 @@
+$margin-sm: 8px;
 .home {
     img.profile {
         @media (max-width: 576px) { 
@@ -7,7 +8,7 @@
 }
 
 body {
-    margin: auto;
+    margin: $margin-sm auto;
     max-width: 800px;
 }
 
@@ -15,7 +16,7 @@ body {
     .social {
         .fa {
             color: #212529;
-            margin: 8px
+            margin: $margin-sm;
         }
     }
 }
