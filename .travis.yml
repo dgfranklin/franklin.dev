@@ -14,8 +14,8 @@ notifications:
 
 
 before_install:
-  - rvm install 2.6
-  - rvm use 2.6
+  - rvm install 2.5
+  - rvm use 2.5
   - gem install bundler 
   - bundle check || bundle install 
 
