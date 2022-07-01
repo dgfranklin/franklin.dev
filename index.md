@@ -1,7 +1,4 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 ---
 
@@ -13,3 +10,5 @@ Previously, I've worked on:
 - [Google's Feed Management tools](https://support.google.com/ci-ses/answer/7253843?hl=en&ref_topic=7253644)
 - [Apple's Numbers, a part of iWork](https://www.apple.com/numbers/)
 - [SSA Mobile for iOS and Android](http://www.facebook.com/ssamobile)
+
+See my [Notes](https://notes.franklin.dev) page for some of my less-organized working notes.
