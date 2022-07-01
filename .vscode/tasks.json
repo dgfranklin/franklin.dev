@@ -11,7 +11,7 @@
                 "kind": "test",
                 "isDefault": true
             },
-            "isBackground": true,
+            "isBackground": true
         },
         {
             "label": "Build",
@@ -20,7 +20,18 @@
             "group": {
                 "kind": "build",
                 "isDefault": true
-            },
+            }
+        },
+        {
+            "label": "Firebase Login",
+            "type": "shell",
+            "command": "firebase login --no-localhost"
+        },
+        {
+            "label": "Firebase Deploy",
+            "type": "shell",
+            "command": "firebase deploy",
+            "problemMatcher": []
         }
     ]
 }
