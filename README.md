@@ -1,5 +1,25 @@
-# franklin.dev - A simple Jekyll-based site
+# franklin.dev
 
-This is the Jekyll source for franklin.dev.
+This is the Jekyll source for franklin.dev, David Franklin's home on the web.
 
-There's not much going on here, but it is a good (read: minimal) branching off place for a personal landing page or portfolio.
+
+## Dev Setup:
+
+- Ensure Docker, VSCode, and firebase-cli is installed
+- Open VSCode
+- In command pallete, select "Remote Containers: Open Folder in Container..."
+- Let it build the environment.
+
+
+## Comman Tasks:
+
+From command pallette, select Tasks: Run Task then any of:
+
+- Serve: Serve a local copy and watch for updates
+- Build: Build changes and save to _site/
+- Firebase Login: Authenticate without localhost on remote computer.
+- Firebase Deploy: Publish changes to host
+
+## Updating
+
+Jekyll and dependencies should be periodically updated with `bundle update`
