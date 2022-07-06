@@ -11,4 +11,4 @@ Previously, I've worked on:
 - [Apple's Numbers, a part of iWork](https://www.apple.com/numbers/)
 - [SSA Mobile for iOS and Android](http://www.facebook.com/ssamobile)
 
-See my [Notes](https://notes.franklin.dev) page for some of my less-organized working notes.
+See my [Notes](https://notes.franklin.dev) page for some of my less-organized thoughts and writings.
