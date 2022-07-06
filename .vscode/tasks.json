@@ -25,7 +25,8 @@
         {
             "label": "Firebase Login",
             "type": "shell",
-            "command": "firebase login --no-localhost"
+            "command": "firebase login --no-localhost",
+            "problemMatcher": []
         },
         {
             "label": "Firebase Deploy",
