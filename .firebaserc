@@ -2,5 +2,18 @@
   "projects": {
     "prod": "dgfranklin-213305",
     "default": "dgfranklin-213305"
-  }
+  },
+  "targets": {
+    "dgfranklin-213305": {
+      "hosting": {
+        "blog": [
+          "dgfranklin-213305"
+        ],
+        "notes": [
+          "notes-franklin"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
