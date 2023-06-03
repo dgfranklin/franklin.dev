@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "notes.franklin.dev/**",
+        "function": "proxyObsidian"
+      },
+      {
         "source": "**",
         "destination": "/404.html"
       }
