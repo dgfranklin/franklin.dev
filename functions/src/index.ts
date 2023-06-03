@@ -5,7 +5,7 @@ export const proxyObsidian = onRequest(async (req, res) => {
   const url = "https://publish.obsidian.md/serve?url=notes.franklin.dev" + req.path;
   try {
     const headers: [string, string][] = [];
-    for (let i = 0; i < req.rawHeaders.length - 1; i += 1) {
+    for (let i = 0; i < req.rawHeaders.length - 1; i += 2) {
       headers.push([req.rawHeaders[i], req.rawHeaders[i + 1]]);
     }
     const options: RequestInit = {
