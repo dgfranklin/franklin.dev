@@ -1,5 +1,6 @@
 {
   "projects": {
-    "prod": "dgfranklin-213305"
+    "prod": "dgfranklin-213305",
+    "default": "dgfranklin-213305"
   }
 }
