@@ -1,19 +1,27 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * import {onCall} from "firebase-functions/v2/https";
- * import {onDocumentWritten} from "firebase-functions/v2/firestore";
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
-
 import {onRequest} from "firebase-functions/v2/https";
-import * as logger from "firebase-functions/logger";
 
-// Start writing functions
-// https://firebase.google.com/docs/functions/typescript
+export const proxyObsidian = onRequest(async (req, res) => {
+  const url = "https://publish.obsidian.md/serve?url=notes.franklin.dev";
+  try {
+    const headers: [string, string][] = [];
+    for (let i = 0; i < req.rawHeaders.length - 1; i += 1) {
+      headers.push([req.rawHeaders[i], req.rawHeaders[i + 1]]);
+    }
+    const options: RequestInit = {
+      method: req.method,
+      headers: headers,
+      redirect: "follow",
+    };
 
-// export const helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+    if (req.method !== "GET") {
+      options.body = req.rawBody;
+    }
+
+    const response = await fetch(url, options);
+    const data = await response.text();
+    res.status(response.status).set(response.headers).send(data);
+  } catch (err) {
+    console.log(err);
+    res.status(500).send(err);
+  }
+});
