@@ -1,7 +1,8 @@
 import {onRequest} from "firebase-functions/v2/https";
+import {warn} from "firebase-functions/logger";
 
 export const proxyObsidian = onRequest(async (req, res) => {
-  const url = "https://publish.obsidian.md/serve?url=notes.franklin.dev";
+  const url = "https://publish.obsidian.md/serve?url=notes.franklin.dev" + req.path;
   try {
     const headers: [string, string][] = [];
     for (let i = 0; i < req.rawHeaders.length - 1; i += 1) {
@@ -21,7 +22,7 @@ export const proxyObsidian = onRequest(async (req, res) => {
     const data = await response.text();
     res.status(response.status).set(response.headers).send(data);
   } catch (err) {
-    console.log(err);
+    warn(err);
     res.status(500).send(err);
   }
 });
