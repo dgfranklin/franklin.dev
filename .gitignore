@@ -7,3 +7,4 @@ vendor
 .jekyll-cache
 .DS_Store
 out
+*-debug.log
