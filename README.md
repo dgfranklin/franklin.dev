@@ -1,4 +1,8 @@
-# franklin.dev
+# franklin.dev - Legacy Jekyll Source
+
+
+> [!WARNING]  
+> This repo has been deprecated in favor of [dgfranklin/franklin.dev-astro](https://github.com/)
 
 This is the Jekyll source for franklin.dev, David Franklin's home on the web.
 
